@@ -1,0 +1,57 @@
+.heroSection {
+  background: var(--primary-color-one);
+    color:var( --highlight-color-one);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.heroTitle{
+  color: var(--primary-color-two);
+
+}
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 80px 0;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}

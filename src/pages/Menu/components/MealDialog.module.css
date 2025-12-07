@@ -1,0 +1,278 @@
+/* ====== MODAL STYLES ====== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 16px;
+    backdrop-filter: blur(4px);
+}
+
+.dialog {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideUp 0.2s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== HEADER ====== */
+.header {
+  background: var(--primary-color-one);
+  padding: 16px 20px;
+  position: relative;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.closeButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ====== CONTENT ====== */
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ====== IMAGE ====== */
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====== DETAILS ====== */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mealTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color-one);
+  text-align: center;
+}
+
+.mealPrice {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-color-two);
+  text-align: center;
+  background: var(--primary-color-two);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  align-self: center;
+}
+
+/* ====== QUANTITY ====== */
+.quantitySection {
+  margin-top: 8px;
+}
+
+.quantityBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--highlight-color-one);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.qtyBtn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--highlight-color-one);
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-color-one);
+  transition: all 0.2s;
+}
+
+.qtyBtn:hover:not(:disabled) {
+  background: var(--primary-color-two);
+  border-color: var(--primary-color-two);
+  color: var(--secondary-color-two);
+}
+
+.qtyBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.qty {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color-one);
+  min-width: 40px;
+  text-align: center;
+}
+
+/* ====== TOTAL ====== */
+.totalSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--highlight-color-one);
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+.totalLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--highlight-color-two);
+}
+
+.totalPrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-color-two);
+}
+
+/* ====== ACTIONS ====== */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.addButton {
+  background: var(--primary-color-two);
+  border: none;
+  color: var(--secondary-color-two);
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.addButton:hover {
+  background: var(--hover-button);
+}
+
+.cancelButton {
+  background: white;
+  border: 2px solid var(--highlight-color-one);
+  color: var(--highlight-color-two);
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelButton:hover {
+  background: var(--highlight-color-one);
+  border-color: var(--primary-color-one);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 480px) {
+  .dialog {
+    max-width: 100%;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .imageContainer {
+    height: 180px;
+  }
+  
+  .mealTitle {
+    font-size: 18px;
+  }
+  
+  .mealPrice {
+    font-size: 22px;
+  }
+  
+  .quantityBox {
+    gap: 16px;
+  }
+  
+  .qtyBtn {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .totalPrice {
+    font-size: 22px;
+  }
+}

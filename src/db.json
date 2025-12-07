@@ -1,0 +1,144 @@
+{
+  "testimonials": [
+    {
+      "id": "C1",
+      "img": "/src/assets/commint1.jpg",
+      "person": "Sarah Johnson",
+      "rating": 4.5,
+      "com": "Exceptional dining experience! Perfect in every detail."
+    },
+    {
+      "id": "C2",
+      "img": "/src/assets/commint2.jpg",
+      "person": "Mike Chen",
+      "rating": 5,
+      "com": "Amazing atmosphere and delicious food. The pasta bolognese is to die for!"
+    },
+    {
+      "id": "C3",
+      "img": "/src/assets/commint3.jpg",
+      "person": "Emily Rodriguez",
+      "rating": 4,
+      "com": "Absolutely loved the modern twist on traditional recipes. Highly recommended!"
+    },
+    {
+      "id": "C4",
+      "img": "/src/assets/commint4.jpg",
+      "person": "David Wilson",
+      "rating": 4.5,
+      "com": "Outstanding quality and service. Every dish was prepared to perfection."
+    }
+  ],
+  "specialMeals": [
+    {
+      "id": "1",
+      "img": "/src/assets/desert1.jpg",
+      "title": "Pasta bolognese",
+      "price": 12.99,
+      "description": "Rich and meaty pasta with parmesan."
+    },
+    {
+      "id": "2",
+      "img": "/src/assets/meal2.jpg",
+      "title": "Caesar Salad",
+      "price": 8.99,
+      "description": "Fresh romaine with Caesar dressing."
+    },
+    {
+      "id": "3",
+      "img": "/src/assets/drink5.jpg",
+      "title": "Tomato Soup",
+      "price": 6.5,
+      "description": "Creamy tomato soup served with bread."
+    }
+  ],
+  "meals": [
+    {
+      "id": 1,
+      "title": "Grilled Salmon",
+      "desc": "Fresh salmon fillet grilled to perfection with herbs and lemon",
+      "price": 24.99,
+      "img": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400",
+      "category": "meals"
+    },
+    {
+      "id": 2,
+      "title": "Beef Burger",
+      "desc": "Juicy beef patty with cheese, lettuce and special sauce",
+      "price": 16.5,
+      "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+      "category": "meals"
+    },
+    {
+      "id": 3,
+      "title": "Caesar Salad",
+      "desc": "Crisp romaine lettuce with caesar dressing and parmesan",
+      "price": 12.75,
+      "img": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400",
+      "category": "meals"
+    },
+    {
+      "id": 4,
+      "title": "Margherita Pizza",
+      "desc": "Classic pizza with tomato sauce, mozzarella and basil",
+      "price": 18.25,
+      "img": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400",
+      "category": "meals"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 5,
+      "title": "Chocolate Cake",
+      "desc": "Rich chocolate cake with ganache frosting",
+      "price": 8.99,
+      "img": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",
+      "category": "desserts"
+    },
+    {
+      "id": 6,
+      "title": "Tiramisu",
+      "desc": "Classic Italian dessert with coffee-soaked ladyfingers",
+      "price": 7.5,
+      "img": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400",
+      "category": "desserts"
+    },
+    {
+      "id": 8,
+      "title": "Ice Cream Sundae",
+      "desc": "Vanilla ice cream with chocolate sauce and nuts",
+      "price": 6.75,
+      "img": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400",
+      "category": "desserts"
+    }
+  ],
+  "drinks": [
+    {
+      "id": 9,
+      "title": "Fresh Orange Juice",
+      "desc": "Freshly squeezed orange juice",
+      "price": 4.5,
+      "img": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400",
+      "category": "drinks"
+    },
+    {
+      "id": 10,
+      "title": "Iced Coffee",
+      "desc": "Chilled coffee with milk and ice",
+      "price": 5.25,
+      "img": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400",
+      "category": "drinks"
+    },
+    {
+      "id": 12,
+      "title": "Green Tea",
+      "desc": "Hot traditional green tea",
+      "price": 3.5,
+      "img": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400",
+      "category": "drinks"
+    }
+  ],
+  "orders": [
+ 
+  ]
+}

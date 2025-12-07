@@ -1,0 +1,105 @@
+/* MealsTab.module.css */
+
+.section {
+  padding: 2rem 0;
+  background-color: var(--primary-color-one);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color-two);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.tabsList {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.tabItem {
+  margin: 0;
+}
+
+.tabButton {
+  background: var(--primary-color-two);
+  color: var(--highlight-color-two);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.tabButton:hover {
+  background: var(--hover-button);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tabButton:active {
+  transform: translateY(0);
+}
+
+.tabButton.active {
+  background: var(--primary-color-one);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tabsList {
+    gap: 0.5rem;
+  }
+  
+  .tabButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem 0;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .tabsList {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .tabButton {
+    width: 200px;
+    padding: 1rem;
+  }
+}

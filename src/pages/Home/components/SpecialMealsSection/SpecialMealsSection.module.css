@@ -1,0 +1,199 @@
+.specialsSection {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.specialsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0 0.5rem; 
+}
+
+.specialsTitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.viewMenuButton {
+  background-color: #f4ce14;
+  color: #333;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.viewMenuButton:hover {
+  background-color: #e0b90f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 206, 20, 0.3);
+}
+
+.mealsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem; 
+  list-style: none;
+  margin: 0;
+  padding: 0 0.5rem; 
+}
+
+.mealCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mealCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mealImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mealContent {
+  padding: 1.5rem;
+}
+
+.mealHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.mealTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.mealPrice {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f4ce14;
+  margin: 0;
+}
+
+.mealDescription {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .mealsGrid {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .specialsSection {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .specialsHeader {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .specialsTitle {
+    font-size: 2.5rem;
+  }
+
+  .mealsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0; 
+  }
+
+  .mealCard {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialsSection {
+    padding: 2rem 0;
+  }
+
+  .specialsTitle {
+    font-size: 2rem;
+  }
+
+  .viewMenuButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .mealsGrid {
+    gap: 1.5rem; 
+  }
+
+  .mealContent {
+    padding: 1rem;
+  }
+
+  .mealTitle {
+    font-size: 1.3rem;
+  }
+
+  .mealPrice {
+    font-size: 1.1rem;
+  }
+
+  .mealDescription {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large screens enhancement */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 3rem;
+  }
+  
+  .specialsHeader {
+    padding: 0 1rem;
+  }
+  
+  .mealsGrid {
+    padding: 0 1rem; 
+    gap: 3.5rem; 
+  }
+}

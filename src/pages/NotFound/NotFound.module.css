@@ -1,0 +1,138 @@
+.notFoundSection {
+  padding: 6rem 2rem;
+  background-color: var(--highlight-color-one);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFoundContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notFoundContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.notFoundNumber {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--primary-color-one);
+  margin: 0;
+  line-height: 1;
+}
+
+.notFoundTitle {
+  font-size: 2.5rem;
+  color: var(--highlight-color-two);
+  margin: 0;
+  font-weight: 600;
+}
+
+.notFoundMessage {
+  font-size: 1.2rem;
+  color: var(--highlight-color-two);
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0;
+}
+
+.notFoundButton {
+  background-color: var(--primary-color-two);
+  color: var(--highlight-color-two);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.notFoundButton:hover {
+  background-color: var(--hover-button);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notFoundIllustration {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, var(--secondary-color-one), var(--secondary-color-two));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.notFoundIllustration::before {
+  content: "?";
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .notFoundSection {
+    padding: 4rem 1rem;
+  }
+  
+  .notFoundNumber {
+    font-size: 6rem;
+  }
+  
+  .notFoundTitle {
+    font-size: 2rem;
+  }
+  
+  .notFoundMessage {
+    font-size: 1.1rem;
+  }
+  
+  .notFoundIllustration {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .notFoundIllustration::before {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notFoundNumber {
+    font-size: 4rem;
+  }
+  
+  .notFoundTitle {
+    font-size: 1.5rem;
+  }
+  
+  .notFoundMessage {
+    font-size: 1rem;
+  }
+  
+  .notFoundButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .notFoundIllustration {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .notFoundIllustration::before {
+    font-size: 3rem;
+  }
+}

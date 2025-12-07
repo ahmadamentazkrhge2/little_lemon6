@@ -1,0 +1,119 @@
+.testimonialCard {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f0f0f0;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.star {
+  color: #FFD700;
+  margin-right: 2px;
+  font-size: 18px;
+}
+
+.ratingNumber {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.testimonialContent {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.comment {
+  font-style: italic;
+  line-height: 1.6;
+  color: #555;
+  font-size: 15px;
+  margin: 0;
+}
+
+.personInfo {
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  margin-right: 15px;
+}
+
+.personImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
+}
+
+.avatarFallback {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #f0f0f0;
+}
+
+.personDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.personName {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.verified {
+  font-size: 12px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .testimonialCard {
+    height: auto;
+    min-height: 250px;
+    padding: 20px;
+    margin: 8px;
+  }
+  
+  .star {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonialCard {
+    padding: 18px 15px;
+    margin: 5px 8px;
+  }
+}

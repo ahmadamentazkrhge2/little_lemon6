@@ -1,0 +1,262 @@
+.section {
+  width: 100%;
+  background-color: var(--primary-color-one);
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 500px;
+}
+
+.heroTitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color-two);
+  margin: 0 0 0.3rem 0;
+  line-height: 1;
+}
+
+.heroSubtitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--highlight-color-one);
+  margin: 0 0 1rem 0;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--highlight-color-one);
+  margin: 0 0 1.5rem 0;
+  max-width: 450px;
+}
+
+.heroButton {
+  background-color: var(--primary-color-two);
+  color: var(--highlight-color-two);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.heroButton:hover {
+  background-color: #e0b90f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 206, 20, 0.3);
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img {
+  width: 80%;
+  max-width: 450px;
+  height: 350px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--primary-color-two);
+  transition: transform 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.02);
+}
+
+/* جعل الصورة مربعة في الأيباد والأجهزة الصغيرة (768px فما دون) */
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .heroContent {
+    max-width: 100%;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.6rem;
+  }
+  
+  .heroDescription {
+    margin: 0 auto 1.5rem auto;
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  
+  .heroImage {
+    justify-content: center;
+  }
+  
+  /* الصورة المربعة للأيباد والأجهزة الصغيرة */
+  .img {
+    width: 320px; /* عرض ثابت للمربع */
+    height: 320px; /* ارتفاع مساوي للعرض لمربع مثالي */
+    max-width: 320px;
+    border-radius: 12px; /* زوايا مستديرة قليلاً */
+  }
+}
+
+/* للأجهزة الصغيرة جداً (أقل من 480px) */
+@media (max-width: 480px) {
+  .section {
+    padding: 1rem 0;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .hero {
+    gap: 1rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.4rem;
+  }
+  
+  .heroDescription {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+  }
+  
+  .heroButton {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* تعديل حجم المربع للأجهزة الصغيرة جداً */
+  .img {
+    width: 280px;
+    height: 280px;
+    max-width: 280px;
+  }
+}
+
+/* للأجهزة الصغيرة جداً (أقل من 380px) */
+@media (max-width: 380px) {
+  .img {
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+  }
+}
+
+/* Large screens enhancement */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 3rem;
+  }
+  
+  .hero {
+    gap: 2rem;
+  }
+  
+  .heroTitle {
+    font-size: 4rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.2rem;
+  }
+  
+  .img {
+    height: 400px;
+    max-width: 500px;
+  }
+}
+
+/* إزالة الـ height الثابتة نهائياً */
+.section,
+.container,
+.hero {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+/* Animation for content */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroContent {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.heroImage {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .img,
+  .heroButton,
+  .heroContent,
+  .heroImage {
+    transition: none;
+    animation: none;
+  }
+  
+  .img:hover {
+    transform: none;
+  }
+  
+  .heroButton:hover {
+    transform: none;
+  }
+}

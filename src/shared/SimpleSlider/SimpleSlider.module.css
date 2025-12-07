@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* تنسيق الأسهم - داخل الحاوية */
+.container :global(.slick-prev) {
+  left: 10px;
+  z-index: 2;
+}
+
+.container :global(.slick-next) {
+  right: 10px;
+  z-index: 2;
+}
+
+.container :global(.slick-prev:before),
+.container :global(.slick-next:before) {
+  font-size: 24px;
+  color: #333;
+  opacity: 0.8;
+}
+
+.container :global(.slick-prev:hover:before),
+.container :global(.slick-next:hover:before) {
+  opacity: 1;
+  color: #000;
+}
+
+/* تنسيق النقاط */
+.container :global(.slick-dots) {
+  bottom: -35px;
+}
+
+.container :global(.slick-dots li button:before) {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.container :global(.slick-dots li.slick-active button:before) {
+  opacity: 1;
+  color: #667eea;
+}
+
+/* جعل الأسهم أكثر وضوحاً */
+.container :global(.slick-prev),
+.container :global(.slick-next) {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container :global(.slick-prev:hover),
+.container :global(.slick-next:hover) {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .container :global(.slick-prev) {
+    left: 5px;
+  }
+  
+  .container :global(.slick-next) {
+    right: 5px;
+  }
+  
+  .container :global(.slick-prev),
+  .container :global(.slick-next) {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .container :global(.slick-prev:before),
+  .container :global(.slick-next:before) {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 0;
+  }
+  
+  .container :global(.slick-prev) {
+    left: 8px;
+  }
+  
+  .container :global(.slick-next) {
+    right: 8px;
+  }
+  
+  .container :global(.slick-prev),
+  .container :global(.slick-next) {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .container :global(.slick-prev:before),
+  .container :global(.slick-next:before) {
+    font-size: 18px;
+  }
+  
+  .container :global(.slick-dots) {
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container :global(.slick-prev) {
+    left: 5px;
+  }
+  
+  .container :global(.slick-next) {
+    right: 5px;
+  }
+  
+  .container :global(.slick-prev),
+  .container :global(.slick-next) {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .container :global(.slick-prev:before),
+  .container :global(.slick-next:before) {
+    font-size: 16px;
+  }
+}
